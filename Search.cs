@@ -45,6 +45,9 @@ namespace MyProjectName
 	    	}	
 		}
 
+        /// <summary>
+        /// Returns a list of people, for debug purposes
+        /// </summary>
 		private static List<Person> buildPersonList()
 		{
 	    	List<Person> list = new List<Person>();
@@ -55,6 +58,9 @@ namespace MyProjectName
 	    	return list;
 		}
 
+        /// <summary>
+        /// Returns all people with a first name that contains the argument name
+        /// </summary>
 		private static List<Person> queryByName(string name)
 		{
 			List<Person> all_people = buildPersonList();
